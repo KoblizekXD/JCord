@@ -1,5 +1,13 @@
 package github.koblizekxd.jcord.api.websocket;
 
+import github.koblizekxd.jcord.api.discord.API;
+import github.koblizekxd.jcord.api.discord.DURI;
+import github.koblizekxd.jcord.api.util.IGateway;
+import github.koblizekxd.jcord.api.util.Payload;
+import github.koblizekxd.jcord.api.util.ResponseHandler;
+import github.koblizekxd.jcord.api.util.SSL;
+import github.koblizekxd.jcord.api.websocket.v13.ClientHandshaker;
+import github.koblizekxd.jcord.api.websocket.v13.SocketHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
@@ -16,14 +24,6 @@ import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketCl
 import io.netty.handler.ssl.SslContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jcord.api.discord.API;
-import org.jcord.api.discord.DURI;
-import org.jcord.api.util.IGateway;
-import org.jcord.api.util.Payload;
-import org.jcord.api.util.ResponseHandler;
-import org.jcord.api.util.SSL;
-import org.jcord.api.websocket.v13.ClientHandshaker;
-import org.jcord.api.websocket.v13.SocketHandler;
 
 import java.net.URI;
 

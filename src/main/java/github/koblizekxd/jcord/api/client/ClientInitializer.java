@@ -1,12 +1,12 @@
 package github.koblizekxd.jcord.api.client;
 
+import github.koblizekxd.jcord.api.util.ResponseHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpClientCodec;
 import io.netty.handler.codec.http.HttpContentDecompressor;
 import io.netty.handler.ssl.SslContext;
-import org.jcord.api.util.ResponseHandler;
 
 public class ClientInitializer extends ChannelInitializer<SocketChannel> {
     private final SslContext context;

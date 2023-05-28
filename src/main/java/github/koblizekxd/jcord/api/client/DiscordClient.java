@@ -1,5 +1,7 @@
 package github.koblizekxd.jcord.api.client;
 
+import github.koblizekxd.jcord.api.util.ResponseHandler;
+import github.koblizekxd.jcord.api.util.SSL;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
@@ -8,10 +10,6 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.http.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jcord.api.util.ResponseHandler;
-import org.jcord.api.util.SSL;
-
-import java.util.ArrayList;
 
 public class DiscordClient {
     public static final Logger LOGGER = LogManager.getLogger();

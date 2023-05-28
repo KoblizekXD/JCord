@@ -1,7 +1,7 @@
 package github.koblizekxd.jcord.api.websocket.v13;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
+import github.koblizekxd.jcord.api.util.ResponseHandler;
+import github.koblizekxd.jcord.api.websocket.Gateway;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelPromise;
@@ -9,8 +9,6 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.FullHttpResponse;
 import io.netty.handler.codec.http.websocketx.*;
 import io.netty.util.CharsetUtil;
-import org.jcord.api.util.ResponseHandler;
-import github.koblizekxd.jcord.api.websocket.Gateway;
 
 public class SocketHandler extends SimpleChannelInboundHandler<Object> {
     private final WebSocketClientHandshaker handshaker;
